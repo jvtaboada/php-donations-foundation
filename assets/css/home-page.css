@@ -1,0 +1,134 @@
+/* classe da div que agrega toda a pagina */
+.full-page{
+    width: 50%;
+    display: inline-block;
+    width: auto;
+
+    border: 1px solid black;
+    border-top: none;
+}
+
+/* cabeçalho da pagina */
+.img-donation{
+    height: 80px;
+    width: 110px;
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid black;
+
+    padding: 10px;
+    gap: 200px;
+}
+
+/* parte principal da pagina */
+.content-box{
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+
+.main-descricao{
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+.second-descricao{
+    font-size: 120%;
+}
+
+/* classes dos formularios 
+- label + input
+- linha
+- botão 
+*/
+fieldset{
+    border: none;
+    margin-top: 40px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.default-camp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 30%;
+}
+
+.default-camp.data input{
+    cursor: not-allowed;
+}
+
+.default-camp input{ /* classe pro campo de forms*/
+    height: 30px;
+    
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 4px;   
+}
+
+.default-camp input:focus{
+    outline: none !important;
+    border-color: #5d9ad3;
+    box-shadow: 0 0 3px #5d9ad3;
+}
+
+.default-camp input:required:not(:placeholder-shown):invalid  {
+    border: 2px solid #c9001b;
+  }
+
+.default-camp label{
+    font-size: 120%;
+    text-align: left;
+}
+
+.linha-form{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.linha-form.doa{
+    margin-top: 20px;
+}
+
+.submit-btn{
+    color: #FFF;
+    font-weight: 900;
+    background-color: #4CAF50;
+
+    font-size: 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    width: 200px;
+    height: 40px;
+
+    margin-top: 20px;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: #3b8b3e;
+}
+
+/* classe do rodapé */
+footer{
+    padding-top: 5px;
+    font-size: 80%;
+}
